@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MauiAppScrollViewProblemNet8.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+
+    <StackLayout Style="{x:StaticResource StackLayoutMain}">
+
+        <ScrollView>
+
+            <StackLayout>
+                <Grid Style="{x:StaticResource GridLabelEntry}">
+                    <Label Text="a" VerticalOptions="Center" />
+                    <Entry Grid.Column="1" Text="a" />
+                </Grid>
+
+                <Grid Style="{x:StaticResource GridLabelEntry}">
+                    <Label Text="b" VerticalOptions="Center" />
+                    <Entry
+                        Grid.Column="1"
+                        Keyboard="Numeric"
+                        Text="b" />
+                </Grid>
+
+                <!--<Border>-->
+                    <VerticalStackLayout Padding="10" Spacing="10">
+                        <Label
+                            FontAttributes="Bold"
+                            FontSize="Title"
+                            Text="c" />
+
+                        <Grid Style="{x:StaticResource GridLabelEntry}">
+
+                            <Label Text="v" VerticalOptions="Center" />
+                            <Entry
+                                Grid.Column="1"
+                                Keyboard="Url"
+                                Text="{Binding Server}" />
+                        </Grid>
+
+                        <Grid Style="{x:StaticResource GridLabelEntry}">
+                            <Label Text="b" VerticalOptions="Center" />
+                            <Entry
+                                Grid.Column="1"
+                                Keyboard="Numeric"
+                                Text="{Binding Porta}" />
+                        </Grid>
+
+                        <Grid Style="{x:StaticResource GridLabelEntry}">
+                            <Label Text="g" VerticalOptions="Center" />
+                            <Entry Grid.Column="1" Text="{Binding Utente}" />
+                        </Grid>
+
+                        <Grid Style="{x:StaticResource GridLabelEntry}">
+                            <Label Text="h" VerticalOptions="Center" />
+                            <Entry Grid.Column="1" Text="{Binding Password}" />
+                        </Grid>
+
+                        <Grid Style="{x:StaticResource GridLabelEntry}">
+                            <Label Text="f" VerticalOptions="Center" />
+                            <Entry Grid.Column="1" Text="{Binding FileInput}" />
+                        </Grid>
+
+                        <Grid Style="{x:StaticResource GridLabelEntry}">
+                            <Label Text="v" VerticalOptions="Center" />
+                            <Entry Grid.Column="1" Text="b" />
+                        </Grid>
+
+
+                        <Grid Style="{x:StaticResource GridLabelEntry}">
+                            <Label Text="v" VerticalOptions="Center" />
+                            <Entry Grid.Column="1" Text="b" />
+                        </Grid>
+
+
+                        <Grid Style="{x:StaticResource GridLabelEntry}">
+                            <Label Text="v" VerticalOptions="Center" />
+                            <Entry Grid.Column="1" Text="b" />
+                        </Grid>
+
+
+                        <Grid Style="{x:StaticResource GridLabelEntry}">
+                            <Label Text="v" VerticalOptions="Center" />
+                            <Entry Grid.Column="1" Text="b" />
+                        </Grid>
+
+
+                        <Grid Style="{x:StaticResource GridLabelEntry}">
+                            <Label Text="v" VerticalOptions="Center" />
+                            <Entry Grid.Column="1" Text="b" />
+                        </Grid>
+
+
+                        <Grid Style="{x:StaticResource GridLabelEntry}">
+                            <Label Text="v" VerticalOptions="Center" />
+                            <Entry Grid.Column="1" Text="b" />
+                        </Grid>
+                    </VerticalStackLayout>
+                <!--</Border>-->
+
+                <Button
+                    Command="{Binding OkCommand}"
+                    Text="34"
+                    VerticalOptions="EndAndExpand" />
+
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+
+</ContentPage>
