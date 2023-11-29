@@ -9,7 +9,10 @@
             InitializeComponent();
         }
 
-      
+        private async void TapGestureRecognizer_Tapped(object sender, TappedEventArgs e)
+        {
+            await DisplayAlert("Message", "tapped", "Ok");
+        }
     }
 
 }
